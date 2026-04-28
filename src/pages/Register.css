@@ -1,20 +1,47 @@
-.register-wrapper {
+/* .register-wrapper {
     min-height: 100vh;
     background: var(--color-background-tertiary);
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 2rem;
+} */
+.register-wrapper {
+    min-height: 100vh;
+    background-image: url('../assets/images/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    position: relative;
 }
 
+.register-overlay {
+    position: absolute;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.4);
+}
 .register-card {
+    position: relative; /* ← thêm để card nổi lên trên overlay */
+    z-index: 1;
+    background: #fff;
+    border: 0.5px solid rgba(0, 0, 0, 0.15);
+    border-radius: 12px;
+    padding: 2rem;
+    width: 100%;
+    max-width: 380px;
+}
+/* .register-card {
     background: var(--color-background-primary);
     border: 0.5px solid var(--color-border-tertiary);
     border-radius: 12px;
     padding: 2rem;
     width: 100%;
     max-width: 380px;
-}
+} */
 
 .register-header {
     text-align: center;
