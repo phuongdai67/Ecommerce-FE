@@ -1,0 +1,34 @@
+.category-slot-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 24px 0;
+    width: 1248px;
+    margin: 0 auto;
+}
+
+.category-slot {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+}
+
+.slot-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: #F5F5F5;
+    transition: background 0.15s;
+}
+
+.slot-circle:hover {
+    background: #e0e0e0;
+}
+
+.slot-label {
+    font-size: 13px;
+    color: #666;
+}

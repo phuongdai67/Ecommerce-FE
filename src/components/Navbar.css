@@ -1,0 +1,137 @@
+.navbar {
+    background: #fff;
+    border-bottom: 0.5px solid #e0e0e0;
+    /* position: sticky;
+    top: 0;
+    z-index: 100; */
+}
+
+.navbar-top {
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.navbar-brand {
+    font-size: 18px;
+    font-weight: 500;
+    color: #000;
+    text-decoration: none;
+    white-space: nowrap;
+}
+
+.navbar-search {
+    flex: 1;
+    max-width: 420px;
+    position: relative;
+}
+
+.navbar-search .search-icon {
+    position: absolute;
+    left: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #999;
+}
+
+.navbar-search input {
+    width: 100%;
+    padding: 8px 12px 8px 34px;
+    border: 0.5px solid #e0e0e0;
+    border-radius: 999px;
+    font-size: 13px;
+    background: #f9f9f9;
+    box-sizing: border-box;
+    outline: none;
+    transition: border 0.15s;
+}
+
+.navbar-search input:focus {
+    border-color: #000;
+    background: #fff;
+}
+
+.navbar-actions {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    white-space: nowrap;
+}
+
+.navbar-link {
+    font-size: 13px;
+    color: #000;
+    text-decoration: none;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.navbar-link:hover {
+    color: #555;
+}
+
+.navbar-username {
+    font-size: 13px;
+    color: #666;
+}
+
+.navbar-divider {
+    color: #ccc;
+    font-size: 13px;
+}
+
+.btn-logout {
+    background: none;
+    border: none;
+    padding: 0;
+    font-family: inherit;
+}
+
+.navbar-cart {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: #000;
+    color: #fff;
+    padding: 7px 14px;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 13px;
+    transition: background 0.15s;
+    position: relative;
+}
+
+.navbar-cart:hover {
+    background: #222;
+}
+
+.cart-badge {
+    background: #fff;
+    color: #000;
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 500;
+    padding: 1px 6px;
+}
+
+.navbar-bottom {
+    padding: 0 40px; /* ← tăng padding 2 bên */
+    display: flex;
+    align-items: center;
+    gap: 8px; /* ← tăng gap giữa các tab */
+    border-bottom: 0.5px solid #e0e0e0;
+}
+
+.navbar-tab {
+    padding: 10px 20px; /* ← tăng padding tab */
+    font-size: 15px;
+    color: #666;
+    text-decoration: none;
+    transition: color 0.15s;
+}
+
+.navbar-tab:hover {
+    color: #000;
+}
