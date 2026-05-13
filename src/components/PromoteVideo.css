@@ -1,0 +1,10 @@
+.promote-video-wrapper {
+    width: 1248px;
+    margin: 0 auto;
+    padding: 24px 0;
+}
+
+.promote-video-wrapper iframe {
+    display: block;
+    border-radius: 0;
+}
