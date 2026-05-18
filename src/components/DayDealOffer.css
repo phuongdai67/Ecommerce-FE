@@ -72,3 +72,14 @@
 .deal-cta:hover {
     opacity: 0.8;
 }
+.day-deal-section {
+    background: #F5F5F5;
+    width: 100%;
+    padding: 0 0 60px 0;
+}
+
+.day-deal-wrapper {
+    width: 1248px;
+    margin: 0 auto;
+    position: relative;
+}

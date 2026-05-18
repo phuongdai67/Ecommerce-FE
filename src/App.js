@@ -18,6 +18,7 @@ import AdminCategories from "./pages/admin/AdminCategories";
 
 // Components
 import Navbar from "./components/Navbar";
+import Footer from "./components/Footer";
 
 // Protected Route — phải đăng nhập mới vào được
 const ProtectedRoute = ({ children }) => {
@@ -78,6 +79,7 @@ function App() {
           }
         />
       </Routes>
+      <Footer />
       <ToastContainer position="top-right" autoClose={3000} />
     </BrowserRouter>
   );

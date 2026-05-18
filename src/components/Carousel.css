@@ -1,0 +1,99 @@
+.carousel-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: visible;
+    position: relative;
+    z-index: 10;
+}
+
+.carousel-track {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 40px;
+    overflow: visible;
+}
+
+.carousel-item {
+    transition: transform 0.4s ease, opacity 0.4s ease;
+}
+
+.carousel-item.left,
+.carousel-item.right {
+    opacity: 0.7;
+}
+
+/* Circle bên trái/phải đẩy vào trung tâm */
+.carousel-item.entering-center {
+    animation: enterCenter 0.4s ease forwards;
+}
+
+/* Circle trung tâm thoát ra */
+.carousel-item.exiting-right {
+    animation: exitRight 0.4s ease forwards;
+}
+
+.carousel-item.exiting-left {
+    animation: exitLeft 0.4s ease forwards;
+}
+
+@keyframes enterCenter {
+    0% {
+        transform: scale(0.75);
+        opacity: 0.7;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes exitRight {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.75) translateX(60px);
+        opacity: 0.7;
+    }
+}
+
+@keyframes exitLeft {
+    0% {
+        transform: scale(1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(0.75) translateX(-60px);
+        opacity: 0.7;
+    }
+}
+
+.carousel-center-group {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.carousel-btn {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    border: 1px solid #ccc;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+    flex-shrink: 0;
+    z-index: 20;
+}
+
+.carousel-btn:hover {
+    background: #f5f5f5;
+    border-color: #000;
+}

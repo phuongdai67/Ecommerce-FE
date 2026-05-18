@@ -1,0 +1,12 @@
+.award-banner-wrapper {
+    width: 1248px;
+    margin: 0 auto;
+    padding: 24px 0;
+}
+
+.award-banner-img {
+    display: block;
+    width: 1248px;
+    height: 450px;
+    object-fit: cover;
+}

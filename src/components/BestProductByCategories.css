@@ -1,0 +1,37 @@
+.best-product-wrapper {
+    width: 1248px;
+    margin: 0 auto;
+    padding: 40px 0 24px;
+}
+
+.best-product-title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 700;
+    color: #000;
+    margin: 0 0 32px;
+}
+.best-product-btn {
+    width: 280px;
+    height: 60px;
+    background: #000;
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.15s;
+    letter-spacing: 0.05em;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.best-product-more {
+    display: flex;
+    justify-content: center; 
+    padding: 24px 0 40px;
+}
+.best-product-btn:hover {
+    background: #222;
+}

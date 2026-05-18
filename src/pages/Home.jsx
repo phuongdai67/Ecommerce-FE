@@ -1,3 +1,5 @@
+import AwardBanner from "../components/AwardBanner";
+import BestProductByCategories from "../components/BestProductByCategories";
 import CategorySlot from "../components/CategorySlot";
 import DayDealOffer from "../components/DayDealOffer";
 import ImageSlider from "../components/ImageSlider";
@@ -13,6 +15,8 @@ const Home = () => {
       <PromoBanner />
       <PromoteVideo />
       <DayDealOffer />
+      <AwardBanner />
+      <BestProductByCategories />
     </div>
   );
 };

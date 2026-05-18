@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import "./DayDealOffer.css";
+import DayDealSwiperSlot from "./DayDealSwiperSlot";
 
 const getSecondsUntilTomorrow10AM = () => {
   const now = new Date();
@@ -38,42 +39,45 @@ const DayDealOffer = () => {
   const { h, m, s } = formatTime(timeLeft);
 
   return (
-    <div className="day-deal-wrapper">
-      <div className="day-deal-card">
-        <div className="day-deal-content">
-          <p className="deal-subtitle">Ưu đãi đặc biệt trong vòng</p>
-          <h1 className="deal-title">1 ngày</h1>
-          <p className="deal-desc">Ưu đãi mới vào lúc 10 giờ sáng mỗi ngày</p>
-          <div className="deal-timer">
-            <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
-              <path
-                d="M12 2L2 7l10 5 10-5-10-5z"
-                stroke="#fff"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M2 17l10 5 10-5"
-                stroke="#fff"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-              <path
-                d="M2 12l10 5 10-5"
-                stroke="#fff"
-                strokeWidth="1.5"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-              />
-            </svg>
-            <span className="timer-text">
-              {h} : {m} : {s}
-            </span>
-            <span className="deal-cta">MUA NGAY</span>
+    <div className="day-deal-section">
+      <div className="day-deal-wrapper">
+        <div className="day-deal-card">
+          <div className="day-deal-content">
+            <p className="deal-subtitle">Ưu đãi đặc biệt trong vòng</p>
+            <h1 className="deal-title">1 ngày</h1>
+            <p className="deal-desc">Ưu đãi mới vào lúc 10 giờ sáng mỗi ngày</p>
+            <div className="deal-timer">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                <path
+                  d="M12 2L2 7l10 5 10-5-10-5z"
+                  stroke="#fff"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M2 17l10 5 10-5"
+                  stroke="#fff"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M2 12l10 5 10-5"
+                  stroke="#fff"
+                  strokeWidth="1.5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+              </svg>
+              <span className="timer-text">
+                {h} : {m} : {s}
+              </span>
+              <span className="deal-cta">MUA NGAY</span>
+            </div>
           </div>
         </div>
+        <DayDealSwiperSlot />
       </div>
     </div>
   );
